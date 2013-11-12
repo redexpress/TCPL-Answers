@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int htoi(const char *s){
+int htoi(const char s[]){
 	int i = 0;
 	if (s[i] == '0'){
 		i++;
