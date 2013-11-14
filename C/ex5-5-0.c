@@ -2,10 +2,11 @@
 #include <string.h>
 #include <stdbool.h>
 
-char *str_cpy(char *s, const char *t){
+char * str_cpy(char *s, const char *t){
+	char *save = s;
 	while((*s++ = *t++)){
 	}
-	return s;
+	return save;
 }
 
 int str_cmp(const char *s, const char *t){
